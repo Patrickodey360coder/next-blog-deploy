@@ -1,0 +1,214 @@
+:root{
+  --primary-color:  #2B6FF3;
+  --background: rgb(243, 245, 248);
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Rubik', sans-serif;
+  background-color: #E5E5E5 !important;
+}
+
+a:hover{
+  color: #184192;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* navigation */
+.nav-bar{
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2B6FF3;
+}
+
+.logo-img{
+  margin-right: 5px;
+}
+
+/* .date{
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  background: #E5E5E5;
+  padding: 5px 10px;
+}
+
+.active{
+  color:var(--primary-color)
+}
+
+
+.box{
+  height: 150px;
+  width: 100%;
+}
+
+.report{
+  background: var(--white);
+}
+
+.bx-1{
+  background: rgba(43, 111, 243, 0.05);
+}
+
+.bx-2{
+  background: rgba(243, 153, 17, 0.05)
+}
+
+.bx-3{
+  background: rgba(22, 180, 66, 0.05);
+}
+
+.bx-4{
+  background: rgba(170, 42, 42, 0.05);
+}
+
+.active-con>h6{
+  font-size: 18px;
+}
+
+.map>img{
+  width: 100%;
+  height: 100%;
+}
+
+.circle{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+
+.circle>img{
+  object-fit: cover;
+  width: 100%;
+}
+
+.span{
+  display: inline;
+}
+
+.symptoms{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 4px;
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 20px 27px;
+  margin: 10px 0px;
+}
+
+.symptoms span{
+      display: inline-block;
+      padding: 10px 30px 10px 0px;
+}
+
+#symptoms{
+  margin-top: 5em!important;
+}
+
+.symp{
+  margin-top: 6em!important;
+}
+
+i{
+  font-size: 1.5em;
+}
+
+
+/*=============
+ Media queries
+ =============*/
+ /* @media (max-width: 770px) {
+  .protect {
+      margin: 0 auto !important;
+  }
+
+  .symp{
+      margin-top: 1em!important;
+  }
+
+  .circle {
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      margin: 0 auto;
+  }
+
+  small{
+      font-size: 1.1em!important;
+  }
+
+  p{
+      font-size: 1.2em!important;
+  }
+
+  .stats{
+      padding-top: 10em;
+  }
+
+  .protect-2{
+      padding-left: 1rem!important;
+      padding-right: 1rem!important;
+  }
+
+  .title{
+      text-align: center;
+  }
+
+  .logo{
+      text-align: center;
+  }
+
+  .date{
+      text-align: center;
+      margin: auto;
+  }
+
+  img{
+      max-width: 100%;
+      height: auto;
+  }
+
+  .protect_yourself{
+      margin-top: 1em!important;
+  }
+
+  .symptoms {
+      font-size: 1.2em!important;
+  }
+
+  .footer{
+      padding: 0 1em;
+  }
+
+  .logo{
+      font-size: 2em!important;
+  }
+
+} */ 
