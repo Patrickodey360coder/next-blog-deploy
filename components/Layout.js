@@ -1,10 +1,13 @@
 import React from 'react'
-import Navigation from './Navigation'
 import Footer from './Footer'
+import Config from './Config'
+import Navigation from './Navigation'
 
-function Layout({children}) {
+function Layout({children, story}) {
   return (
     <>
+      {/* <Config blok={story.content}/>
+       */}
       <Navigation/>
       {children}
       <Footer/>
