@@ -20,7 +20,7 @@ export default async function preview(req, res) {
 
   const params = req.url.split('?');
 
-  const secret = process.env.NEXT_PUBLIC_STORYBLOK_PREVIEW;
+  const secret = process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN;
 
   if ( req.query.secret !== secret) {
     return res.status(401).json({ message: 'Invalid token' })
