@@ -20,7 +20,7 @@ export default function handler(req, res) {
 
   const params = req.url.split('?');
 
-  if ( req.query.secret !== process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN ) {
+  if ( req.query.secret !== "ZeBQnfmciPsQuDshMshgwwtt" ) {
     return res.status(401).json({ message: 'Invalid token' })
   }
 
