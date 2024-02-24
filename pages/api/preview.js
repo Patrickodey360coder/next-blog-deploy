@@ -26,10 +26,6 @@ export default async function preview(req, res) {
     return res.status(401).json({ message: 'Invalid token' })
   }
 
-  console.log(secret)
-
-  con
-
   res.setPreviewData({});
 
   const cookies = res.getHeader('Set-Cookie');
