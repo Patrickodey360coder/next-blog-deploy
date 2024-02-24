@@ -20,7 +20,7 @@ export default function handler(req, res) {
 
   const params = req.url.split('?');
 
-  if ( req.query.secret !== "ZeBQnfmciPsQuDshMshgwwtt" ) {
+  if ( req.query.secret !== "ZeBQnfmciPsQuDshMshgwwtt") {
     return res.status(401).json({ message: 'Invalid token' })
   }
 
