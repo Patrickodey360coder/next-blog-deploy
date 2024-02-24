@@ -18,7 +18,6 @@
 export default function handler(req, res) {
   const { slug = '' } = req.query;
 
-  
   const params = req.url.split('?');
 
   if ( req.query.secret !== process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_TOKEN ) {
