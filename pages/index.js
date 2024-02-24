@@ -6,7 +6,7 @@ import {
   StoryblokComponent,
 } from '@storyblok/react';
 
-export default function Home({ story }) {
+export default function Home({ story}) {
   story = useStoryblokState(story);
   return (
     <div>
@@ -19,11 +19,11 @@ export default function Home({ story }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps({preview}) {
   let slug = 'home';
 
   let sbParams = {
-    version: 'draft', // or 'published'
+    version: preview ? 'draft' : 'published',
     resolve_links: 'url',
   };
 
@@ -36,6 +36,7 @@ export async function getStaticProps(context) {
       story: data ? data.story : false,
       key: data ? data.story.id : false,
       config: config ? config.story : false,
+      preview: preview || false,
     },
     revalidate: 3600,
   };

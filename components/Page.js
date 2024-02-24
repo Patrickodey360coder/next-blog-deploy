@@ -1,6 +1,5 @@
 "use client"
 
-
 import { storyblokEditable, StoryblokComponent } from "@storyblok/react";
 
 const Page = ({ blok }) => (
