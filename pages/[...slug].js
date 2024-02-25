@@ -25,6 +25,7 @@ export async function getStaticProps({ params, preview }) {
 
   let sbParams = {
     version:  preview? "draft" : "published",
+    // version:  "published",
     resolve_links: 'url',
   };
 
