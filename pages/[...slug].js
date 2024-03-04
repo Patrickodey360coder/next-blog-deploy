@@ -6,7 +6,7 @@ import {
   StoryblokComponent,
 } from "@storyblok/react";
 
-export default function Page({ story, preview }) {
+export default function Page({ story }) {
   story = useStoryblokState(story);
 
   return (
@@ -24,8 +24,7 @@ export async function getStaticProps({ params, preview }) {
   let slug = params.slug ? params.slug.join("/") : "home";
 
   let sbParams = {
-    version:  preview? "draft" : "published",
-    // version:  "published",
+    version:  preview ? "draft" : "published",
     resolve_links: 'url',
   };
 
@@ -41,10 +40,10 @@ export async function getStaticProps({ params, preview }) {
       config: config ? config.story : false,
       preview: preview || false,
     },
-
     revalidate: 3600,
   };
 }
+
 export async function getStaticPaths() {
   const storyblokApi = getStoryblokApi();
   let { data } = await storyblokApi.get("cdn/links/" ,{

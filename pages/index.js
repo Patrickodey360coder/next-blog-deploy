@@ -20,6 +20,7 @@ export default function Home({ story}) {
 }
 
 export async function getStaticProps({preview}) {
+
   let slug = 'home';
 
   let sbParams = {
@@ -28,7 +29,7 @@ export async function getStaticProps({preview}) {
   };
 
   const storyblokApi = getStoryblokApi();
-  let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams,);
+  let { data } = await storyblokApi.get(`cdn/stories/${slug}`, sbParams);
   let { data: config } = await storyblokApi.get('cdn/stories/config');
 
   return {

@@ -1,6 +1,4 @@
-import React from 'react'
-
-function Footer({blok}) {
+function Footer() {
   return (
     <footer className="bg-white dark:bg-gray-900">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
@@ -16,7 +14,7 @@ function Footer({blok}) {
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">Flowbite</a>
+                          <a href="https://flowbite.com/" className="hover:underline">Patrick</a>
                       </li>
                       <li>
                           <a href="https://tailwindcss.com/" className="hover:underline">Tailwind CSS</a>

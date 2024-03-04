@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import "../styles/style.css";
 import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Feature from "../components/Feature";
 import Grid from "../components/Grid";
@@ -12,6 +13,7 @@ import HeaderMenu from "../components/HeaderMenu";
 import Layout from "../components/Layout";
 import Article from "../components/Article";
 import AllArticles from "../components/AllArticles";
+import ImageSection from "../components/ImageSection";
 
 const components = {
   feature: Feature,
@@ -25,7 +27,8 @@ const components = {
   "menu_link": MenuLink,
   layout: Layout,
   article: Article,
-  all_articles: AllArticles
+  all_articles: AllArticles,
+  image_section: ImageSection,
 };
 
 storyblokInit({

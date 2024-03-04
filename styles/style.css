@@ -51,7 +51,7 @@ img{
   margin-right: 5px;
 }
 
-/* .date{
+ .date{
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -141,74 +141,23 @@ i{
 }
 
 
-/*=============
- Media queries
- =============*/
- /* @media (max-width: 770px) {
-  .protect {
-      margin: 0 auto !important;
-  }
+.image-section {
+  position: relative;
+  height: 100vh;
+}
 
-  .symp{
-      margin-top: 1em!important;
-  }
+.image-section-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
 
-  .circle {
-      height: 100px;
-      width: 100px;
-      border-radius: 50%;
-      margin: 0 auto;
-  }
+.imgage-section-image {
+  z-index: -100;
+}
 
-  small{
-      font-size: 1.1em!important;
-  }
-
-  p{
-      font-size: 1.2em!important;
-  }
-
-  .stats{
-      padding-top: 10em;
-  }
-
-  .protect-2{
-      padding-left: 1rem!important;
-      padding-right: 1rem!important;
-  }
-
-  .title{
-      text-align: center;
-  }
-
-  .logo{
-      text-align: center;
-  }
-
-  .date{
-      text-align: center;
-      margin: auto;
-  }
-
-  img{
-      max-width: 100%;
-      height: auto;
-  }
-
-  .protect_yourself{
-      margin-top: 1em!important;
-  }
-
-  .symptoms {
-      font-size: 1.2em!important;
-  }
-
-  .footer{
-      padding: 0 1em;
-  }
-
-  .logo{
-      font-size: 2em!important;
-  }
-
-} */ 
+.button {
+  z-index: 100;
+}

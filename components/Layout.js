@@ -1,4 +1,3 @@
-import React from 'react'
 import Footer from './Footer'
 import Config from './Config'
 import Navigation from './Navigation'
